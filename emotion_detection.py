@@ -16,17 +16,16 @@ def emotion_detector(text_to_analyze):
     joy_score = emotions['joy']
     sadness_score = emotions['sadness']
 
-
-emotion_list = {
+    emotion_list = {
         'anger': anger_score,
         'disgust': disgust_score,
         'fear': fear_score,
         'joy': joy_score,
         'sadness': sadness_score
     }
+
     dominant_emotion = max(emotion_list, key=emotion_list.get)
    
-    # temporary dictionary to test
     return {
         'anger': anger_score,
         'disgust': disgust_score,
